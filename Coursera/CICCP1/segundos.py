@@ -10,4 +10,4 @@ segs_restantes2 = segs_restantes1 % 3600 # o resto da divisão são os segundos 
 c = segs_restantes2 // 60               # os minutos são os segundos restantes acima dividido por 60 (60s = 1 min)
 d = segs_restantes2 % 60   # os segundos finais é o resto de segs_restantes2 por 60
 
-print(a, "dias, ", b, "horas, ", c, "minutos e", d, "segundos.")
+print(a, "dias,", b, "horas,", c, "minutos e", d, "segundos.")
