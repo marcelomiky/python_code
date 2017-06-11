@@ -1,0 +1,1 @@
+define("bundles/videojs/layout/nls/pt/autoplayMenuSection",["require","exports","module"],function(require,exports,module){"use strict";module.exports={Autoplay:"Reprodução automática",Off:"Desativada",On:"Ativada"}});
