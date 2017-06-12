@@ -1,0 +1,1 @@
+define("nls/pt/ui",["require","exports","module"],function(require,exports,module){"use strict";module.exports={Close:"Fechar",Less:"Menos",More:"Mais"}});

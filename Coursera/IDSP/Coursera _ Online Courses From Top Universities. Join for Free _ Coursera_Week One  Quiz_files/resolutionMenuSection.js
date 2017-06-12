@@ -1,0 +1,1 @@
+define("bundles/videojs/layout/nls/pt/resolutionMenuSection",["require","exports","module"],function(require,exports,module){"use strict";module.exports={High:"Alta",Low:"Baixa",Medium:"Média","Video Quality":"Qualidade do vídeo"}});

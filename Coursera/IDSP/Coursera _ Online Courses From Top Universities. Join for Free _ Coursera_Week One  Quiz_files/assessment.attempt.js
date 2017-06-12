@@ -1,0 +1,1 @@
+define("bundles/assess/assessmentTypes/phoenixQuiz/nls/pt/assessment.attempt",["require","exports","module"],function(require,exports,module){"use strict";module.exports={"Load Error!":"Erro no carregamento!","Submit Quiz":"Enviar teste","Submit error! Please try again.":"Erro no envio. Tente novamente.","Submitting...":"Enviando...","loading &nbsp;&nbsp;":"carregando   "}});

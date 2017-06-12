@@ -1,0 +1,1 @@
+define("bundles/confirmNavigation/nls/pt/confirmNavigation",["require","exports","module"],function(require,exports,module){"use strict";module.exports={"Are you sure you want to leave this page?":"Tem certeza de que deseja sair desta página?","Confirm Navigation":"Confirmar navegação","Leave this Page":"Sair desta página","Stay on this Page":"Permanecer nesta página"}});

@@ -1,0 +1,1 @@
+define("nls/pt/profile",["require","exports","module"],function(require,exports,module){"use strict";module.exports={Facebook:"Facebook",GitHub:"GitHub","Google+":"Google+",LinkedIn:"LinkedIn","No threads found.":"Nenhum tópico encontrado.","Recent Replies":"Respostas recentes","Recent Threads":"Tópicos recentes",Twitter:"Twitter"}});

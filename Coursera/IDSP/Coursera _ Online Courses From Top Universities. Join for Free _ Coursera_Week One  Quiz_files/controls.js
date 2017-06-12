@@ -1,0 +1,1 @@
+define("bundles/videojs/layout/nls/pt/controls",["require","exports","module"],function(require,exports,module){"use strict";module.exports={Cast:"Transmitir",Download:"Baixar",Fullscreen:"Tela cheia",Settings:"Configurações",Subtitles:"Legendas","Subtitles Off":"Legendas desativadas"}});

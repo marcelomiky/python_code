@@ -1,0 +1,1 @@
+define("nls/pt/payments-common",["require","exports","module"],function(require,exports,module){"use strict";module.exports={"% off":"% de desconto","*":"*"}});
