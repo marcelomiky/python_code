@@ -11,4 +11,4 @@ class Triangulo:
         elif self.a != self.b and self.a != self.c and self.b != self.c:
             return 'escaleno'
         else:
-            return 'isósceles'
+            return 'isóceles'
