@@ -1,9 +1,3 @@
-# n = número de peças inicial
-# m = número máximo de peças a ser retiradas por jogador
-
-# a estratégia do computador para ganhar consiste em deixar sempre um número de peças 
-# que seja múltiplo de (m+1) ao jogador. 
-
 def calcula_jogada(n, m):
     
     peças_a_retirar = 0
@@ -16,18 +10,18 @@ def calcula_jogada(n, m):
 def computador_escolhe_jogada(n, m):
     
     if n < m: # caso que peças disponíveis é menor que o número máximo de peças que se pode tirar
-        print("Computador retira %d peças. (I)" % n)
-        print("Há %d peças restantes.\n" % (n - n))
+        print("O computador tirou %d peças." % n)
+        print("Agora restam %d peças no tabuleiro.\n" % (n - n))
         proxima_jogada = n
     
     elif calcula_jogada(n, m) != 0: # caso que o cpu calcula a qtd de peças para retirar
         proxima_jogada = calcula_jogada(n, m)
-        print("Computador retira %d peças. (II)" % proxima_jogada)
-        print("Há %d peças restantes.\n" % (n - proxima_jogada))
+        print("O computador tirou %d peças." % proxima_jogada)
+        print("Agora restam %d peças no tabuleiro.\n" % (n - proxima_jogada))
     
     else: # caso que o cpu retira o maior número de peças possíveis
-        print("Computador retira %d peças. (III)" % m)
-        print("Há %d peças restantes.\n" % (n - m))
+        print("O computador tirou %d peças." % m)
+        print("Agora restam %d peças no tabuleiro.\n" % (n - m))
         proxima_jogada = m
 
     return proxima_jogada
@@ -40,20 +34,20 @@ def usuario_escolhe_jogada(n, m):
         print("Valor incorreto. O valor deve estar entre 1 e %d, ou ser menor que a quantidade de peças disponíveis (%d)"% (n, m))
         jogada_usuario = int(input("Informe sua jogada: "))
     
-    print("\nUsuário retira %d peças." % jogada_usuario)
-    print("Há %d peças restantes.\n" % (n - jogada_usuario))
+    print("\nVocê tirou %d peças." % jogada_usuario)
+    print("Agora resta %d peças no tabuleiro.\n" % (n - jogada_usuario))
     return jogada_usuario
 
 def partida():
-    n = int(input("Informe o valor das peças inicial: "))
-    m = int(input("Informe o valor de máximo de peças a ser retiradas: "))
+    n = int(input("Quantas peças? "))
+    m = int(input("Limite de peças por jogada? "))
     
     vencedor = 2 # variável de controle para quem venceu. 1 para cpu, 0 para usuário.
     
     peças_restantes = n
     
     if n % (m + 1) == 0: # caso que o computador deixa o usuário começar
-        print("Computador permite que usuário comece a partida.\n")
+        print("Você começa!\n")
         proxima_jogada = 0
         
         while peças_restantes > 0:
@@ -73,6 +67,7 @@ def partida():
                 break
                 
     else:  # caso que o computador começa a partida
+        print("Computador começa!\n")
         while peças_restantes > 0:
 
             # jogada computador
@@ -130,6 +125,6 @@ def main():
         print("Você escolheu um campeonato!")
         campeonato()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
 
