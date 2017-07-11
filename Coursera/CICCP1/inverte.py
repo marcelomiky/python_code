@@ -10,4 +10,8 @@ def inverte_sequencia():
 
     lista = lista[::-1]
     
-    return lista
+    def imprime(list):
+        for i in list:
+            print(i)
+            
+    return imprime(lista)
