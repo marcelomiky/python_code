@@ -8,6 +8,11 @@ def inverte_sequencia():
             lista.append(x)
         else:
             break        
+
+    lista = lista[::-1]
     
-    for i in lista[::-1]:
-        print(i)
+    def imprime(list):
+        for i in list:
+            print(i)
+            
+    return imprime(lista)
