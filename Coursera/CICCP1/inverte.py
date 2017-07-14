@@ -2,16 +2,12 @@ def inverte_sequencia():
     
     lista = []
 
-    x = int(input("Digite um número (zero para sair):"))
-
-    while x != 0:
-        lista.append(x)
+    while True:
         x = int(input("Digite um número (zero para sair):"))
-
-    lista = lista[::-1]
+        if x != 0:
+            lista.append(x)
+        else:
+            break        
     
-    def imprime(list):
-        for i in list:
-            print(i)
-            
-    return imprime(lista)
+    for i in lista[::-1]:
+        print(i)
