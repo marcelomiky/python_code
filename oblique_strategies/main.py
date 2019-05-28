@@ -16,7 +16,7 @@ with open('sentences.csv') as csvfile:
 
 #print('LEN list_sentences: ', len(list_sentences))  # 196
 
-random_number = random.randint(0, len(list_sentences))
+random_number = random.randint(0, len(list_sentences)-1)
 
-print("Random number: ", random_number)
+#print("Random number: ", random_number)
 print(list_sentences[random_number])
