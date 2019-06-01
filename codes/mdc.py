@@ -1,7 +1,11 @@
+def cria_lista_numeros_primos():
+    pass
+    
 def mdc(var1, var2):
     lista_divisores_1 = list()
     lista_divisores_2 = list()
     
+    #lista_primos = cria_lista_numeros_primos()
     lista_primos = [2, 3, 5, 7, 11]
     
     resto_lista_divisores_1 = 2 # número aleatório, diferente de 1, pra começar
