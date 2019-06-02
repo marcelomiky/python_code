@@ -46,14 +46,36 @@ def mdc(var1, var2):
         lista_primos = cria_lista_numeros_primos_ate_n_sobre_2(var2)
     
     #lista_primos = [2, 3, 5, 7, 11]
+    print("Lista primos:", lista_primos)
     
-#    resto_lista_divisores_1 = 2 # número aleatório, diferente de 1, pra começar
-    divisor = lista_primos[0]
-   
-    while var1 % divisor != 1:
-        var1_temp = va1 / divisor
-            lista_divisores1.append(lista_primos[0])
-                
+    resto_lista_divisores_1 = 2 # número aleatório, diferente de 1, pra começar
+    divisor = lista_primos[1]
+    print("Divisor[0]:", divisor)
+    counter = 0
+    lista_divisores1 = [lista_primos[0]]
+    temp_var1 = var1
+    
+    # while resto_lista_divisores_1 != 1:
+    while counter <= len(lista_primos)-1:
+        print("Counter(0):", counter)
+        print("temp_var1:", temp_var1)
+        print("Divisor dentro while", divisor)
+        #if type(temp_var1 / divisor) == int:
+        if temp_var1 % divisor == 0:
+            print("!!Divisor:", divisor)
+            lista_divisores1.append(divisor)
+            resto_lista_divisores1 = temp_var1 / divisor
+            print("resto lista divisores:", resto_lista_divisores_1)
+            temp_var1 = resto_lista_divisores1
+        else:
+            print('caiu no ELSE')
+            divisor = lista_primos[counter]
+            counter += 1
+            
+
+    print("Lista divisores:", lista_divisores1)
+
+mdc(12,8)
     
     # Pega a intersecção deles
     # intersec =
