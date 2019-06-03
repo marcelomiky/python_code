@@ -113,6 +113,14 @@ def mdc(var1, var2):
 # b = 36
 # print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 36
 
+# a = 180
+# b = 252
+# print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 36
+
+a = 180
+b = 108
+print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 36
+
 
 """
 Ex:
