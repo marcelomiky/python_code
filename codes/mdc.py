@@ -37,8 +37,14 @@ def cria_lista_numeros_primos_ate_n_sobre_2(n):
 
 
 def intersection(lst1, lst2):  # From here: https://www.geeksforgeeks.org/python-intersection-two-lists/
-    lst3 = [value for value in lst1 if value in lst2]
-    return lst3
+    lst3_temp1 = [value for value in lst1 if value in lst2]
+    lst3_temp2 = [value for value in lst2 if value in lst1]
+
+    # print("TEMP1: {}. TEMP2: {}".format(lst3_temp1, lst3_temp2))
+    if len(lst3_temp1) < len(lst3_temp2):
+        return lst3_temp1
+    else:
+        return lst3_temp2
 
 
 def multiply(numbers):  # From here: https://www.w3resource.com/python-exercises/python-functions-exercise-3.php
@@ -68,7 +74,6 @@ def mdc(var1, var2):
     lista_primos_var2 = cria_lista_numeros_primos_ate_n_sobre_2(var2)
 
     divisor = lista_primos_var2[1]
-    # print("Divisor[0]:", divisor)
     counter = 0
     lista_divisores2 = list()
     temp_var2 = var2
@@ -81,24 +86,34 @@ def mdc(var1, var2):
             counter += 1
             divisor = lista_primos_var2[counter]
 
+    print("LISTA DIVISORES 1: ", lista_divisores1)
+    print("LISTA DIVISORES 2: ", lista_divisores2)
+
     lista_interseccao_divisores = intersection(lista_divisores1, lista_divisores2)
+    # lista_interseccao_divisores = set(lista_divisores1).intersection(set(lista_divisores2))
+
+    print("lista_interseccao_divisores:", lista_interseccao_divisores)
 
     return multiply(lista_interseccao_divisores)
 
 
-a = 12
-b = 8
+# a = 12
+# b = 8
+# print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 4
+#
+# a = 12
+# b = 24
+# print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 12
+#
+# a = 120
+# b = 150
+# print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 30
+#
+# a = 180
+# b = 36
+# print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 36
 
-print("MDC({},{}) = {}".format(a, b, mdc(a, b)))
 
-
-# mdc(24,8)
-
-    # Pega a intersecção deles
-    # intersec =
-    
-    # Multiplica todos os valores da intersecção entre eles
-            
 """
 Ex:
 
