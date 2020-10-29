@@ -1,7 +1,6 @@
 def eh_primo(x):
     """
     Função que determina se o número x é primo ou não
-    
     return 1: é primo
     return 0: não é primo
     """
@@ -15,11 +14,6 @@ def eh_primo(x):
         return 0
     else:
         return 1
-
-
-#print(eh_primo(3))
-#print(eh_primo(2))
-#print(eh_primo(17))
 
 
 def cria_lista_numeros_primos_ate_n(n):
@@ -157,7 +151,6 @@ def mdc(var1, var2):
         print("LISTA DIVISORES 1: ", lista_divisores1)
         print("LISTA DIVISORES 2: ", lista_divisores2)
 
-
         lista_interseccao_divisores = intersection(lista_divisores1, lista_divisores2)
         # lista_interseccao_divisores = set(lista_divisores1).intersection(set(lista_divisores2))
 
@@ -169,15 +162,15 @@ def mdc(var1, var2):
 # a = 12
 # b = 8
 # print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 4
-
+#
 # a = 12
 # b = 24
 # print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 12
 
 # CASO DE ERRO! ARRUMAR NO insersection()
-# a = 120
-# b = 150
-# print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 30
+a = 120
+b = 150
+print("MDC({},{}) = {}".format(a, b, mdc(a, b)))  # = 30
 
 # a = 180
 # b = 36
