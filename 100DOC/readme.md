@@ -5,6 +5,6 @@ Iniciando maratona de 100 Dias de Código. Início: 3.1.22!
 - Dia 003 (05.01.22): Recompor fatores primos decompostos, simplificar frações, operações com frações
 - Dia 004 (06.01.22): Lambda Functions (funções anônimas)
 - Dia 005 (07.01.22): Regressão linear, MAE, RMSE, probleminha matriz
-- Dia 006 (07.01.22): 
+- Dia 006 (13.01.22): Problema Matriz (Dado uma matriz MxN de números inteiros, busque um número na matriz toda, retorne a posição deste elemento e os seus vizinhos)
 - Dia 007 (07.01.22): 
 - 
